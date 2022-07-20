@@ -1,0 +1,62 @@
+version: '3.1'
+volumes:
+    db-vol:
+networks:
+    web-nw:
+    db-nw:
+services:
+    db:
+        image: mysql:5.7.38-debian
+        restart: always
+        environment:
+            MYSQL_DATABASE: shop_db
+            MYSQL_USER: shop_user
+            MYSQL_PASSWORD: '${MYSQL_PASSWORD}'
+            MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+        volumes:
+            - db-vol:/var/lib/mysql
+        networks:
+            - web-nw
+            - db-nw
+    web:
+        image: car_shop
+        build: 
+            context: ./web
+            dockerfile: ./Dockerfile
+        environment:
+            PS_INSTALL_AUTO: 0
+            SOURCE_PATH: ${SOURCE_PATH}
+            GIT_REPO: ${GIT_REPO}
+        restart: always
+        ports:
+            - 80:80
+        depends_on:
+            - db
+        networks:
+            - web-nw
+        links:
+            - "db:db-host"
+        working_dir: /home
+        volumes:
+            - ./web.conf:/home/volume/web.conf:ro
+        command: ["sh", "-c", "echo starting..
+            && cat /home/volume/web.conf > /etc/apache2/sites-available/000-default.conf
+            && cd /home
+            && [ ! -d /home/${GIT_REPO}/ ] && git clone ${GIT_CLONE} && cd ${GIT_REPO}
+            && git switch ${GIT_BRANCH} && git pull
+            && cd /home
+            && chmod 777 ${GIT_REPO}/${SOURCE_PATH}
+            && chown -R www-data:www-data ${GIT_REPO}/${SOURCE_PATH}
+            && apache2-foreground"]
+    phpmyadmin:
+        image: phpmyadmin:5.2.0
+        restart: always
+        ports:
+            - 8080:80
+        environment:
+            PMA_ARBITRARY: 0
+            PMA_HOST: db
+        depends_on:
+            - db
+        networks:
+            - db-nw
