@@ -25,12 +25,8 @@ services:
             dockerfile: ./Dockerfile
             args:
                 QUICKSTART: ${QUICKSTART}
-                SOURCE_PATH: ${SOURCE_PATH}
-                GIT_REPO: ${GIT_REPO}
         environment:
             PS_INSTALL_AUTO: 0
-            SOURCE_PATH: ${SOURCE_PATH}
-            GIT_REPO: ${GIT_REPO}
         restart: always
         ports:
             - 80:80
@@ -40,17 +36,18 @@ services:
             - web-nw
         links:
             - "db:db-host"
-        working_dir: /home/prestashop
+        working_dir: /var/www/html
         volumes:
             - ./web.conf:/home/volume/web.conf:ro
         command: ["sh", "-c", "echo starting...
             && cat /home/volume/web.conf > /etc/apache2/sites-available/000-default.conf
-            && cd /home/prestashop/git_source
+            && cd /git_sources
             && ([ ! -d ${GIT_REPO}/ ] && git clone ${GIT_CLONE} || cd .)
             && cd ${GIT_REPO}
             && git switch ${GIT_BRANCH} && git pull
-            && cp -Rf ${SOURCE_PATH}/* /home/prestashop/${GIT_REPO}/${SOURCE_PATH}
-            && chown -R www-data:www-data /home/prestashop
+            && cp -Rf ${SOURCE_PATH}/* /var/www/html
+            && chown -R www-data:www-data /var/www/html
+            && chmod -R 755 /var/www/html/*
             && apache2-foreground"]
     phpmyadmin:
         image: phpmyadmin:5.2.0
