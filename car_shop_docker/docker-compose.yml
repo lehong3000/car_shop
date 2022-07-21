@@ -42,7 +42,7 @@ services:
         command: ["sh", "-c", "echo starting..
             && cat /home/volume/web.conf > /etc/apache2/sites-available/000-default.conf
             && cd /home
-            && [ ! -d /home/${GIT_REPO}/ ] && git clone ${GIT_CLONE} && cd ${GIT_REPO}
+            && ([ ! -d /home/${GIT_REPO}/ ] && git clone ${GIT_CLONE} && cd ${GIT_REPO} || cd ${GIT_REPO})
             && git switch ${GIT_BRANCH} && git pull
             && cd /home
             && chmod 777 ${GIT_REPO}/${SOURCE_PATH}
