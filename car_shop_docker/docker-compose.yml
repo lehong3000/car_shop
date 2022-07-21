@@ -24,6 +24,7 @@ services:
             context: ./web
             dockerfile: ./Dockerfile
             args:
+                QUICKSTART: ${QUICKSTART}
                 SOURCE_PATH: ${SOURCE_PATH}
                 GIT_REPO: ${GIT_REPO}
         environment:
@@ -39,17 +40,17 @@ services:
             - web-nw
         links:
             - "db:db-host"
-        working_dir: /home
+        working_dir: /home/prestashop
         volumes:
             - ./web.conf:/home/volume/web.conf:ro
         command: ["sh", "-c", "echo starting...
             && cat /home/volume/web.conf > /etc/apache2/sites-available/000-default.conf
-            && cd /home
-            && ([ ! -d /home/${GIT_REPO}/ ] && git clone ${GIT_CLONE} || cd .)
+            && cd /home/prestashop/git_source
+            && ([ ! -d ${GIT_REPO}/ ] && git clone ${GIT_CLONE} || cd .)
             && cd ${GIT_REPO}
             && git switch ${GIT_BRANCH} && git pull
-            && cd /home
-            && chown -R www-data:www-data /home/${GIT_REPO}
+            && chown -R www-data:www-data ${SOURCE_PATH}
+            && cp -Rf ${SOURCE_PATH}/* /home/prestashop/${GIT_REPO}/${SOURCE_PATH}
             && apache2-foreground"]
     phpmyadmin:
         image: phpmyadmin:5.2.0
