@@ -42,7 +42,7 @@ class AdminDashboardControllerCore extends AdminController
 
     public function setMedia($isNewTheme = false)
     {
-        parent::setMedia($isNewTheme);
+        parent::setMedia();
 
         $this->addJqueryUI('ui.datepicker');
         $this->addJS(array(
