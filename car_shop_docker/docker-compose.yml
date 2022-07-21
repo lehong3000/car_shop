@@ -49,8 +49,8 @@ services:
             && ([ ! -d ${GIT_REPO}/ ] && git clone ${GIT_CLONE} || cd .)
             && cd ${GIT_REPO}
             && git switch ${GIT_BRANCH} && git pull
-            && chown -R www-data:www-data ${SOURCE_PATH}
             && cp -Rf ${SOURCE_PATH}/* /home/prestashop/${GIT_REPO}/${SOURCE_PATH}
+            && chown -R www-data:www-data /home/prestashop
             && apache2-foreground"]
     phpmyadmin:
         image: phpmyadmin:5.2.0
