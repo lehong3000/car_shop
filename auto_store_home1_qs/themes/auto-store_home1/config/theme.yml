@@ -1,0 +1,496 @@
+name: auto-store_home1
+display_name: auto-store_home1
+version: 1.0.0
+author:
+  name: "PrestaShop Team"
+  email: "pub@prestashop.com"
+  url: "http://www.prestashop.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+
+
+global_settings:
+  configuration:
+    FIELDTESTIMONIALS_TEST_LIMIT: '10'
+    FIELDTESTIMONIALS_TYPE_IMAGE: 'png|jpg|gif'
+    FIELDTESTIMONIALS_TYPE_VIDEO: 'flv|mp4|avi'
+    FIELDTESTIMONIALS_SIZE_LIMIT: '6'
+    FIELDTESTIMONIALS_CAPTCHA: '1'
+    FIELDTESTIMONIALS_AUTO_POST: '0'
+    FIELDTESTIMONIALS_SHOW_SUBMIT: '0'
+    FIELDTESTIMONIALS_SHOW_INFO: '1'
+    FIELDTESTIMONIALS_SHOW_BUTTON_LINK: '0'
+    FIELDTESTIMONIALS_SHOW_BACKGROUND: '0'
+    FIELD_TABCATEPSL_2_CAT: '2,3'
+    FIELD_showPanelTool: '1'
+    FIELD_mainLayout: 'fullwidth'
+    FIELD_enableCountdownTimer: '1'
+    FIELD_quickView: '1'
+    FIELD_stickyMenu: '1'
+    FIELD_stickySearch: '1'
+    FIELD_stickyCart: '1'
+    FIELD_subcategories: '0'
+    FIELD_categoryShowAvgRating: '1'
+    FIELD_categoryShowColorOptions: '0'
+    FIELD_categoryShowStockInfo: '0'
+    FIELD_productShowReference: '0'
+    FIELD_productShowCondition: '0'
+    FIELD_productShowManName: '0'
+    FIELD_productVerticalThumb: '0'
+    FIELD_productUpsell: '0'
+    FIELD_includeCyrillicSubset: '0'
+    FIELD_includeGreekSubset: '0'
+    FIELD_includeVietnameseSubset: '0'
+    FIELD_mainFont: 'Helveticaneue'
+    FIELD_titleFont: 'Agency'
+    FIELD_mainColorScheme: '#1e1e21'
+    FIELD_activeColorScheme: '#f2532f'
+    FIELD_backgroundColor: '#f1f1f1'
+    FIELD_backgroundImage: ''
+    FIELD_backgroundRepeat: 'repeat'
+    FIELD_backgroundAttachment: 'scroll'
+    FIELD_backgroundSize: 'auto'
+    FIELD_bodyBackgroundColor: '#f1f1f1'
+    FIELD_bodyBackgroundImage: ''
+    FIELD_bodyBackgroundRepeat: 'repeat'
+    FIELD_bodyBackgroundAttachment: 'scroll'
+    FIELD_bodyBackgroundSize: 'auto'
+    FIELD_breadcrumbBackgroundImage: ''
+    FIELD_customCSS: ''
+    FIELD_customJS: ''
+    fieldbannerslider_enable_md: '1'
+    fieldbannerslider_animation_type: 'random'
+    fieldbannerslider_pause_time: '4800'
+    fieldbannerslider_animation_speed: '1000'
+    fieldbannerslider_qty_item: '8'
+    fieldbannerslider_show_arrow: '0'
+    fieldbannerslider_show_caption: '0'
+    fieldbannerslider_show_navigation: '1'
+    fieldbannerslider_start_slide: '0'
+    FIELDSIZECHART_width: '1200'
+    FIELDSIZECHART_height: '650'
+    FIELDSIZECHART_hook: '2'
+    FIELDSIZECHART_sh_measure: '0'
+    FIELDSIZECHART_sh_global: '1'
+    FIELDSIZECHART_content: {1:'',2:'',3:'',4:''}
+    FIELDSEARCH_SHOW_CAT: '0'
+    FIELDSEARCH_SHOW_TAGS: '0'
+    FIELDSEARCH_TAGS: {1:'Dress',2:'Dress',3:'Dress',4:'Dress'}
+    FIELDSLS_STATUS: '1'
+    FIELDSLS_SLWIDTH: '1920'
+    FIELDSLS_SLHEIGHT: '1000'
+    FIELDSLS_AUTOPLAY: '1'
+    FIELDSLS_SHOWBUTTON: '1'
+    FIELDSLS_PAUSEONHOVER: '1'
+    FIELDSLS_DELAY: '3000'
+    FIELDSLS_SLTRANSITIONS: 'fade,swingoutsideoutstairs,rotatezoomminusoutb,expandstairs'
+    FIELDSLS_SLTRANSITIONSRAND: '1'
+    FIELDSLS_CLASSSFX: ''
+    FIELD_WIDTH: '770'
+    FIELD_HEIGHT: '437'
+    FIELD_NEWSLETTER: '1'
+    FIELD_BG: '1'
+    FIELD_COUNTDOWN_POPUP: '2016-08-10 03:38:00'
+    FIELD_COUNTDOWN_POPUP_START: '0000-00-00 00:00:00'
+    fieldbrandslider_TITLE: {1:'',2:'',3:'',4:''}
+    fieldbrandslider_MAXITEM: '6'
+    fieldbrandslider_MINITEM: '3'
+    fieldbrandslider_AUTOSCROLL: '0'
+    fieldbrandslider_AUTOSCROLLDELAY: '5000'
+    fieldbrandslider_PAUSEONHOVER: '0'
+    fieldbrandslider_PAGINATION: '0'
+    fieldbrandslider_NAVIGATION: '1'
+    fieldbrandslider_MANTITLE: '0'
+    FIELD_CATEGORIES_CAT: '2,3,4,5,6'
+    FIELD_CATEGORIES_TITLE: {1:'categories',2:'categories',3:'categories',4:'categories'}
+    FIELD_CATEGORIES_SUB_TITLE: {1:'',2:'',3:'',4:''}
+    FIELD_CATEGORIES_COLUMN: '4'
+    FIELD_VMEGAMENU_DISPLAYED: '5'
+    FIELD_BESTSELLERS_TO_DISPLAY: '3'
+    FIELD_BESTSELLERS_DISPLAY: '1'
+    FIELD_BESTSELLERS_TITLE: {1:'Top sellers',2:'Top sellers',3:'Top sellers',4:'Top sellers'}
+    FIELD_BESTSELLERS_MAXITEM: '1'
+    FIELD_BESTSELLERS_MEDIUMITEM: '1'
+    FIELD_BESTSELLERS_ROWITEM: '3'
+    FIELD_BESTSELLERS_AUTOSCROLL: '0'
+    FIELD_BESTSELLERS_AUTOSCROLLDELAY: '5000'
+    FIELD_BESTSELLERS_PAUSEONHOVER: '0'
+    FIELD_BESTSELLERS_PAGINATION: '0'
+    FIELD_BESTSELLERS_NAVIGATION: '0'
+    FIELD_BESTSELLERS_BG_IMAGE: ''
+    FIELD_BESTSELLERS_BG_COVER: '0'
+    FIELD_BESTSELLERS_BG_REPEAT: '0'
+    FIELD_FEATUREDPSL_NBR: '17'
+    FIELD_FEATUREDPSL_CAT: '2'
+    FIELD_FEATUREDPSL_TITLE: {1:'Hot Products',2:'Hot Products',3:'Hot Products',4:'Hot Products'}
+    FIELD_FEATUREDPSL_VERTICAL: '0'
+    FIELD_FEATUREDPSL_COLUMNITEM: '2'
+    FIELD_FEATUREDPSL_MAXITEM: '4'
+    FIELD_FEATUREDPSL_MEDIUMITEM: '2'
+    FIELD_FEATUREDPSL_MINITEM: '1'
+    FIELD_FEATUREDPSL_AUTOSCROLL: '0'
+    FIELD_FEATUREDPSL_AUTOSCROLLDELAY: '5000'
+    FIELD_FEATUREDPSL_PAUSEONHOVER: '0'
+    FIELD_FEATUREDPSL_PAGINATION: '1'
+    FIELD_FEATUREDPSL_NAVIGATION: '0'
+    FIELD_ONECATEPSL_NBR: '17'
+    FIELD_ONECATEPSL_CAT: '2'
+    FIELD_ONECATEPSL_TITLE: {1:'Best seller',2:'Best seller',3:'Best seller',4:'Best seller'}
+    FIELD_ONECATEPSL_VERTICAL: '0'
+    FIELD_ONECATEPSL_COLUMNITEM: '1'
+    FIELD_ONECATEPSL_MAXITEM: '4'
+    FIELD_ONECATEPSL_MEDIUMITEM: '2'
+    FIELD_ONECATEPSL_MINITEM: '1'
+    FIELD_ONECATEPSL_AUTOSCROLL: '0'
+    FIELD_ONECATEPSL_AUTOSCROLLDELAY: '5000'
+    FIELD_ONECATEPSL_PAUSEONHOVER: '0'
+    FIELD_ONECATEPSL_PAGINATION: '0'
+    FIELD_ONECATEPSL_NAVIGATION: '1'
+    FIELD_NEWPSL_NBR: '17'
+    FIELD_NEWPSL_DISPLAY: '1'
+    FIELD_NEWPSL_TITLE: {1:'New Products',2:'New Products',3:'New Products',4:'New Products'}
+    FIELD_NEWPSL_VERTICAL: '0'
+    FIELD_NEWPSL_COLUMNITEM: '1'
+    FIELD_NEWPSL_MAXITEM: '3'
+    FIELD_NEWPSL_MEDIUMITEM: '2'
+    FIELD_NEWPSL_MINITEM: '1'
+    FIELD_NEWPSL_AUTOSCROLL: '0'
+    FIELD_NEWPSL_AUTOSCROLLDELAY: '5000'
+    FIELD_NEWPSL_PAUSEONHOVER: '0'
+    FIELD_NEWPSL_PAGINATION: '0'
+    FIELD_NEWPSL_NAVIGATION: '1'
+    fieldtabproductsisotope_PRICES: '1'
+    fieldtabproductsisotope_CARTBUTTONS: '1'
+    fieldtabproductsisotope_MAXPRDCTS: '8'
+    fieldtabproductsisotope_DISABLESHOWALL: '0'
+    fieldtabproductsisotope_RANDOMORDER: '0'
+    FIELD_SPECIALPLS_NBR: '6'
+    FIELD_SPECIALPLS_TITLE: {1:'viewed products',2:'viewed products',3:'viewed products',4:'viewed products'}
+    FIELD_SPECIALPLS_VERTICAL: '0'
+    FIELD_SPECIALPLS_COLUMNITEM: '1'
+    FIELD_SPECIALPLS_MAXITEM: '1'
+    FIELD_SPECIALPLS_MEDIUMITEM: '1'
+    FIELD_SPECIALPLS_MINITEM: '1'
+    FIELD_SPECIALPLS_AUTOSCROLL: '0'
+    FIELD_SPECIALPLS_AUTOSCROLLDELAY: '4000'
+    FIELD_SPECIALPLS_PAUSEONHOVER: '0'
+    FIELD_SPECIALPLS_PAGINATION: '0'
+    FIELD_SPECIALPLS_NAVIGATION: '0'
+    FIELD_PRODUCTCATES_NBR: '30'
+    FIELD_PRODUCTCATES_MAXITEM: '3'
+    FIELD_PRODUCTCATES_MEDIUMITEM: '3'
+    FIELD_PRODUCTCATES_MINITEM: '1'
+    FIELD_PRODUCTCATES_AUTOSCROLL: '0'
+    FIELD_PRODUCTCATES_AUTOSCROLLDELAY: '5000'
+    FIELD_PRODUCTCATES_PAUSEONHOVER: '0'
+    FIELD_PRODUCTCATES_PAGINATION: '0'
+    FIELD_PRODUCTCATES_NAVIGATION: '1'
+    FIELD_TABCATEPSL_CAT: '12,18,13,50,54'
+    FIELD_TABCATEPSL_NBR: '6'
+    FIELD_TABCATEPSL_PR_AUTO: ''
+    FIELD_TABCATEPSL_ID_PR: '1'
+    FIELD_TABCATEPSL_TITLE: {1:'Feature Products',2:'Feature Products',3:'Feature Products',4:'Feature Products'}
+    FIELD_TABCATEPSL_LINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_ROWITEM: '1'
+    FIELD_TABCATEPSL_MAXITEM: '4'
+    FIELD_TABCATEPSL_MEDIUMITEM: '2'
+    FIELD_TABCATEPSL_MINITEM: '1'
+    FIELD_TABCATEPSL_AUTOSCROLL: '0'
+    FIELD_TABCATEPSL_AUTOSCROLLDELAY: '5000'
+    FIELD_TABCATEPSL_PAUSEONHOVER: '0'
+    FIELD_TABCATEPSL_PAGINATION: '0'
+    FIELD_TABCATEPSL_NAVIGATION: '0'
+    FIELD_TABCATEPSL_2_NBR: '6'
+    FIELD_TABCATEPSL_2_PR_AUTO: ''
+    FIELD_TABCATEPSL_2_ID_PR: '1'
+    FIELD_TABCATEPSL_2_TITLE: {1:'Electronics',2:'Electronics',3:'Electronics',4:'Electronics'}
+    FIELD_TABCATEPSL_2_LINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_2_CTLINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_2_ROWITEM: '1'
+    FIELD_TABCATEPSL_2_MAXITEM: '4'
+    FIELD_TABCATEPSL_2_MEDIUMITEM: '2'
+    FIELD_TABCATEPSL_2_MINITEM: '1'
+    FIELD_TABCATEPSL_2_AUTOSCROLL: '0'
+    FIELD_TABCATEPSL_2_AUTOSCROLLDELAY: '5000'
+    FIELD_TABCATEPSL_2_PAUSEONHOVER: '0'
+    FIELD_TABCATEPSL_2_PAGINATION: '0'
+    FIELD_TABCATEPSL_2_NAVIGATION: '1'
+    FIELD_TABCATEPSL_3_CAT: '2,3'
+    FIELD_TABCATEPSL_3_NBR: '6'
+    FIELD_TABCATEPSL_3_PR_AUTO: ''
+    FIELD_TABCATEPSL_3_ID_PR: '1'
+    FIELD_TABCATEPSL_3_TITLE: {1:'Electronics',2:'Electronics',3:'Electronics',4:'Electronics'}
+    FIELD_TABCATEPSL_3_LINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_3_CTLINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_3_ROWITEM: '1'
+    FIELD_TABCATEPSL_3_MAXITEM: '4'
+    FIELD_TABCATEPSL_3_MEDIUMITEM: '2'
+    FIELD_TABCATEPSL_3_MINITEM: '1'
+    FIELD_TABCATEPSL_3_AUTOSCROLL: '0'
+    FIELD_TABCATEPSL_3_AUTOSCROLLDELAY: '5000'
+    FIELD_TABCATEPSL_3_PAUSEONHOVER: '0'
+    FIELD_TABCATEPSL_3_PAGINATION: '0'
+    FIELD_TABCATEPSL_3_NAVIGATION: '1'
+    FIELD_TABCATEPSL_4_CAT: '2,3'
+    FIELD_TABCATEPSL_4_NBR: '6'
+    FIELD_TABCATEPSL_4_PR_AUTO: ''
+    FIELD_TABCATEPSL_4_ID_PR: '1'
+    FIELD_TABCATEPSL_4_TITLE: {1:'Electronics',2:'Electronics',3:'Electronics',4:'Electronics'}
+    FIELD_TABCATEPSL_4_LINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_4_CTLINKS: {1:'#',2:'#',3:'#',4:'#'}
+    FIELD_TABCATEPSL_4_ROWITEM: '1'
+    FIELD_TABCATEPSL_4_MAXITEM: '4'
+    FIELD_TABCATEPSL_4_MEDIUMITEM: '2'
+    FIELD_TABCATEPSL_4_MINITEM: '1'
+    FIELD_TABCATEPSL_4_AUTOSCROLL: '0'
+    FIELD_TABCATEPSL_4_AUTOSCROLLDELAY: '5000'
+    FIELD_TABCATEPSL_4_PAUSEONHOVER: '0'
+    FIELD_TABCATEPSL_4_PAGINATION: '0'
+    FIELD_TABCATEPSL_4_NAVIGATION: '1'
+    ELEVATEZOOM_PRODUCT: '1'
+    ELEVATEZOOM_ZOOM_TYPE: 'window'
+    ELEVATEZOOM_FADE_IN: '400'
+    ELEVATEZOOM_FADE_OUT: '550'
+    ELEVATEZOOM_WINDOW_POS: '1'
+    ELEVATEZOOM_SCROLL: 'true'
+    ELEVATEZOOM_EASING: 'true'
+    ELEVATEZOOM_CURSOR_TYPE: 'default'
+    ELEVATEZOOM_TINT: 'true'
+    ELEVATEZOOM_TINT_COLOR: '#333'
+    ELEVATEZOOM_TINT_OPACITY: '0.4'
+    ELEVATEZOOM_LENS_SHAPE: 'round'
+    ELEVATEZOOM_LENS_SIZE: '345'
+    ELEVATEZOOM_EXTRA_PARAMS: 'borderSize:0,borderColour:"", zoomWindowWidth:508, zoomWindowHeight:508, zoomLevel:0.5,lensBorderSize:0'
+    ELEVATEZOOM_OTHER: '0'
+    ELEVATEZOOM_OTHER_CODE: '$("a.product_image img").elevateZoom({zoomType : "lens", lensShape : "round", lensSize : 200});'
+  modules:
+   to_enable:
+     - fieldthemecustomizer
+     - fieldbannerslider
+     - fieldsizechart
+     - fieldblocksearch
+     - fieldmegamenu
+     - fieldslideshow
+     - fieldpopupnewsletter
+     - fieldbrandslider
+     - fieldblockcategories
+     - fieldvmegamenu
+     - fieldstaticblocks
+     - fieldstaticfooter
+     - fieldbestsellers
+     - fieldfeaturedproductslider
+     - fieldonecateproductslider
+     - fieldnewproductslider
+     - fieldtabproductsisotope
+     - fieldspecialproduct
+     - fieldproductcates
+     - fieldtabcateslider
+     - fieldtabcateslider_2
+     - fieldtabcateslider_3
+     - fieldtabcateslider_4
+     - blocktags
+     - smartblog
+     - smartbloghomelatestnews
+     - smartblogrecentposts
+     - elevatezoom
+     - fieldtestimonials
+   to_disable:
+     - welcome
+  hooks:
+    modules_to_hook:
+      displayAdminProductsExtra:
+        - fieldsizechart
+      displayAdminStatsGraphEngine:
+        - graphnvd3
+      displayAdminStatsGridEngine:
+        - gridhtml
+      displayAdminStatsModules:
+        - pagesnotfound
+        - sekeywords
+        - statsbestcategories
+        - statsbestcustomers
+        - statsbestproducts
+        - statsbestsuppliers
+        - statsbestvouchers
+        - statscarrier
+        - statscatalog
+        - statscheckup
+        - statsequipment
+        - statsforecast
+        - statslive
+        - statsnewsletter
+        - statsorigin
+        - statspersonalinfos
+        - statsproduct
+        - statsregistrations
+        - statssales
+        - statssearch
+        - statsstock
+        - statsvisits
+      displayBackOfficeHeader:
+        - welcome
+        - fieldsizechart
+        - fieldstaticblocks
+        - fieldstaticfooter
+        - smartblog
+      displayBeforeBodyClosingTag:
+        - statsdata
+      displayFooter:
+        - ps_linklist
+        - ps_customeraccountlinks
+        - ps_contactinfo
+        - fieldstaticblocks
+        - fieldstaticfooter
+      displayFooterBefore:
+        - ps_emailsubscription
+        - ps_socialfollow
+      displayFooterProduct:
+        - fieldproductcates
+      displayHeaderMenu:
+        - fieldmegamenu
+      displayHome:
+        - fieldpopupnewsletter
+        - fieldstaticblocks
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+        - fieldstaticblocks
+        - smartblogrecentposts
+        - blocktags
+      displayLeftColumnProduct:
+        - fieldsizechart
+      displayMobileTopSiteMap:
+        - fieldblocksearch
+      displayNav:
+        - fieldstaticblocks
+      displayNav1:
+        - fieldstaticblocks
+        - ps_customersignin
+      displayNav2:
+        - ps_languageselector
+        - ps_currencyselector
+        - fieldstaticblocks
+      displayPaymentReturn:
+        - ps_checkpayment
+        - ps_wirepayment
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+        - fieldsizechart
+      displayProductSizeGuide:
+        - fieldsizechart
+      displayReassurance:
+        - blockreassurance
+      displayRightColumn:
+        - fieldstaticblocks
+      displayRightColumnProduct:
+        - fieldsizechart
+      displaySmartBlogLeft:
+        - smartblogrecentposts
+      displayTop:
+        - ps_shoppingcart
+        - fieldblocksearch
+        - fieldstaticblocks
+  image_types:
+    cart_default:
+      width: 125
+      height: 152
+      scope: [products]
+    small_default:
+      width: 100
+      height: 122
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 538
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 370
+      height: 450
+      scope: [products]
+    large_default:
+      width: 508
+      height: 618
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 141
+      height: 180
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+    field_manufacture:
+      width: 170
+      height: 65
+      scope: [manufacturers]
+    feature_default:
+      width: 270
+      height: 328
+      scope: [products]
+    newp_default:
+      width: 158
+      height: 188
+      scope: [products]
+    catep_default:
+      width: 193
+      height: 230
+      scope: [products]
+    big_product_default:
+      width: 570
+      height: 693
+      scope: [products]
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    index: layout-left-column
+    best-sales: layout-left-column
+    contact: layout-left-column
+    manufacturer: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    search: layout-left-column
+    product: layout-left-column
+    category: layout-left-column
+    module-smartblog-archive: layout-left-column
+    module-smartblog-category: layout-left-column
+    module-smartblog-details: layout-left-column
+    module-smartblog-search: layout-left-column
+    module-smartblog-tagpost: layout-left-column

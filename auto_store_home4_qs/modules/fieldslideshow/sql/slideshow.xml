@@ -1,0 +1,182 @@
+<fieldslideshow>
+	
+				<slideshow>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<porder>1</porder>
+					<active>1</active>
+					<images>slider-111.jpg</images>
+				</slideshow>
+		
+				<slideshow_shop>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<id_shop>1</id_shop>
+				</slideshow_shop>
+				
+				<slideshow>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<porder>2</porder>
+					<active>1</active>
+					<images>slider-222.jpg</images>
+				</slideshow>
+		
+				<slideshow_shop>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<id_shop>1</id_shop>
+				</slideshow_shop>
+				
+				<slideshow>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<porder>3</porder>
+					<active>1</active>
+					<images>slider-333.jpg</images>
+				</slideshow>
+		
+				<slideshow_shop>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<id_shop>1</id_shop>
+				</slideshow_shop>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<id_lang>1</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>women fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<id_lang>2</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>women fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<id_lang>3</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>women fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>1</id_fieldslideshow>
+					<id_lang>4</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>women fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<id_lang>1</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>men fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<id_lang>2</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>men fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<id_lang>3</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>men fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>2</id_fieldslideshow>
+					<id_lang>4</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>men fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<id_lang>1</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>shoe’s fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<id_lang>2</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>shoe’s fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<id_lang>3</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>shoe’s fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			
+				<slideshow_lang>
+					<id_fieldslideshow>3</id_fieldslideshow>
+					<id_lang>4</id_lang>
+					<title1>DESIGNER</title1>
+					<title2>shoe’s fashion 2017</title2>
+					<btntext>Shop now !</btntext>
+					<link>#</link>
+					<description>
+						<![CDATA[<p>.Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>]]>
+					</description>
+				</slideshow_lang>
+			</fieldslideshow>
