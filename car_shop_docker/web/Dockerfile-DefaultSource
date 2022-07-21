@@ -1,0 +1,12 @@
+FROM  alpine:latest as build
+WORKDIR /
+COPY ./auto_quickstart/auto_home1_quickstart_on_prestashop_1.7.2.2.zip .
+RUN unzip -q auto_home1_quickstart_on_prestashop_1.7.2.2.zip
+
+FROM prestashop/prestashop:1.7.8.6-apache
+ARG GIT_REPO
+ARG SOURCE_PATH
+RUN rm -Rf /var/www/html && mkdir /var/www/html && chown www-data:www-data /var/www/html && chmod 777 /var/www/html \
+	&& mkdir /home/logs && chown www-data:www-data /home/logs
+COPY --chown=www-data:www-data --chmod=755 --from=build /auto_store_home1_qs /home/${GIT_REPO}/${SOURCE_PATH}
+EXPOSE 80
