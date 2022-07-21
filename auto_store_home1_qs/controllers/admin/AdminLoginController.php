@@ -44,7 +44,7 @@ class AdminLoginControllerCore extends AdminController
         }
     }
 
-    public function setMedia($isNewTheme = false)
+    public function setMedia()
     {
         $this->addJquery();
         $this->addjqueryPlugin('validate');

@@ -172,7 +172,7 @@ class AdminEmployeesControllerCore extends AdminController
         }
     }
 
-    public function setMedia($isNewTheme = false)
+    public function setMedia()
     {
         parent::setMedia();
         $this->addJS(__PS_BASE_URI__.$this->admin_webpath.'/themes/'.$this->bo_theme.'/js/vendor/jquery-passy.js');

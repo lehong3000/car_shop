@@ -40,7 +40,7 @@ class AdminDashboardControllerCore extends AdminController
         }
     }
 
-    public function setMedia($isNewTheme = false)
+    public function setMedia()
     {
         parent::setMedia();
 
