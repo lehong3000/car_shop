@@ -49,8 +49,9 @@ services:
             && cd ${GIT_REPO}
             && git switch ${GIT_BRANCH} && git pull
             && cd /home
-            && chown -R www-data:www-data ${GIT_REPO}/${SOURCE_PATH}
-            && chmod -R 755 ${GIT_REPO}/${SOURCE_PATH}
+            && chown -R www-data:www-data /home/${GIT_REPO}
+            && chmod 777 /home/${GIT_REPO}
+            && chmod -R 755 /home/${GIT_REPO}/*
             && apache2-foreground"]
     phpmyadmin:
         image: phpmyadmin:5.2.0
