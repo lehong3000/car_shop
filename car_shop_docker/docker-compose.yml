@@ -23,6 +23,9 @@ services:
         build: 
             context: ./web
             dockerfile: ./Dockerfile
+            args:
+                SOURCE_PATH: ${SOURCE_PATH}
+                GIT_REPO: ${GIT_REPO}
         environment:
             PS_INSTALL_AUTO: 0
             SOURCE_PATH: ${SOURCE_PATH}
@@ -46,8 +49,8 @@ services:
             && cd ${GIT_REPO}
             && git switch ${GIT_BRANCH} && git pull
             && cd /home
-            && chmod 777 ${GIT_REPO}/${SOURCE_PATH}
             && chown -R www-data:www-data ${GIT_REPO}/${SOURCE_PATH}
+            && chmod -R 755 ${GIT_REPO}/${SOURCE_PATH}
             && apache2-foreground"]
     phpmyadmin:
         image: phpmyadmin:5.2.0
