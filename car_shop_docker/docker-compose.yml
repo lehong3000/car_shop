@@ -1,6 +1,7 @@
 version: '3.1'
 volumes:
     db-vol:
+    web-vol:
 networks:
     web-nw:
     db-nw:
@@ -39,6 +40,7 @@ services:
         working_dir: /var/www/html
         volumes:
             - ./web.conf:/home/volume/web.conf:ro
+            - web-vol:/var/www/html
         command: ["sh", "-c", "echo starting...
             && cat /home/volume/web.conf > /etc/apache2/sites-available/000-default.conf
             && cd /git_sources
