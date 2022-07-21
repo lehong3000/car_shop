@@ -2,7 +2,7 @@ FROM  alpine:latest as build
 ARG QUICKSTART
 WORKDIR /
 COPY ./auto_quickstart/${QUICKSTART} .
-RUN unzip -q auto_home1_quickstart_on_prestashop_1.7.2.2.zip
+RUN unzip -q ${QUICKSTART}
 
 FROM prestashop/prestashop:1.7.8.6-apache
 ARG GIT_REPO
