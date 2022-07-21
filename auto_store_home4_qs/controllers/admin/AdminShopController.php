@@ -78,7 +78,7 @@ class AdminShopControllerCore extends AdminController
         return 'ROLE_MOD_TAB_ADMINSHOPGROUP_';
     }
 
-    public function viewAccess($disable = false)
+    public function viewAccess()
     {
         return Configuration::get('PS_MULTISHOP_FEATURE_ACTIVE');
     }

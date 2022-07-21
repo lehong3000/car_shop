@@ -752,9 +752,9 @@ class AdminControllerCore extends Controller
      * @param bool $disable
      * @return bool
      */
-    public function viewAccess($disable = false)
+    public function viewAccess()
     {
-        return $this->access('view', $disable);
+        return $this->access('view', false);
     }
 
     /**

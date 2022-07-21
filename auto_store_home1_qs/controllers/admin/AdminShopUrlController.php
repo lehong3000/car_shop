@@ -89,7 +89,7 @@ class AdminShopUrlControllerCore extends AdminController
         );
     }
 
-    public function viewAccess($disable = false)
+    public function viewAccess()
     {
         return Configuration::get('PS_MULTISHOP_FEATURE_ACTIVE');
     }

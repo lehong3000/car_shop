@@ -161,7 +161,7 @@ class AdminLoginControllerCore extends AdminController
      *
      * @return bool
      */
-    public function viewAccess($disable = false)
+    public function viewAccess()
     {
         return true;
     }
