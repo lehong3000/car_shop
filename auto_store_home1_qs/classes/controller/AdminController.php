@@ -2672,7 +2672,7 @@ class AdminControllerCore extends Controller
 
     public function setMedia()
     {
-        $isNewTheme = false
+        $isNewTheme = false;
         if ($isNewTheme) {
             $this->addCSS(__PS_BASE_URI__.$this->admin_webpath.'/themes/new-theme/public/theme.css', 'all', 1);
             $this->addJS(__PS_BASE_URI__.$this->admin_webpath.'/themes/new-theme/public/main.bundle.js');
